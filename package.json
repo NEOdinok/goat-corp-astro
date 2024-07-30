@@ -1,5 +1,5 @@
 {
-  "name": "goat-corp",
+  "name": "goat-corp-asro",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
@@ -10,16 +10,19 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/check": "^0.7.0",
+    "@astrojs/check": "^0.8.3",
     "@astrojs/tailwind": "^5.1.0",
-    "astro": "^4.11.0",
+    "@fontsource-variable/roboto-mono": "^5.0.19",
+    "astro": "^4.12.2",
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.40",
     "typescript": "^5.5.2"
   },
   "devDependencies": {
-    "tailwindcss": "^3.4.4",
     "eslint": "^9.5.0",
     "prettier": "^3.3.2",
     "stylelint": "^16.6.1",
-    "stylelint-config-tailwindcss": "^0.0.7"
+    "stylelint-config-tailwindcss": "^0.0.7",
+    "tailwindcss": "^3.4.4"
   }
 }
