@@ -19,7 +19,30 @@ const { title, description = "Scary aesthetic for angry people", image = "/image
 		<meta name="og:image" content={image} />
 		<title>{title}</title>
 	</head>
-	<body class="font-mono min-h-screen">
+	<body class="font-mono min-h-screen bg-background">
 		<slot />
 	</body>
 </html>
+
+<script is:inline>
+  // TODO: move to utils maybe
+  // add types
+  //
+	// const getThemePreference = () => {
+	// 	if (typeof localStorage !== 'undefined' && localStorage.getItem('theme')) {
+	// 		return localStorage.getItem('theme');
+	// 	}
+	// 	return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+	// };
+
+	const isDark = true;
+	document.documentElement.classList[isDark ? 'add' : 'remove']('dark');
+
+	if (typeof localStorage !== 'undefined') {
+		const observer = new MutationObserver(() => {
+			const isDark = document.documentElement.classList.contains('dark');
+			localStorage.setItem('theme', isDark ? 'dark' : 'light');
+		});
+		observer.observe(document.documentElement, { attributes: true, attributeFilter: ['class'] });
+	}
+</script>
