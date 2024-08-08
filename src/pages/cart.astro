@@ -1,0 +1,15 @@
+---
+import '@/index.css';
+import BaseLayout from "@/layouts/BaseLayout.astro";
+
+const pageTitle = "cart";
+---
+{/* TODO:
+* почему-то ошибка при импорте через @/. Посмотеть конфиг
+*/}
+
+<BaseLayout title={pageTitle}>
+  <div class="pt-11 pb-16">
+    <h2 class="font-bold text-3xl">{pageTitle}</h2>
+  </div>
+</BaseLayout>

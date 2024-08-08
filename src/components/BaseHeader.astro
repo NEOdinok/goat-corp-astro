@@ -1,0 +1,20 @@
+---
+import HeaderNavigation from "./HeaderNavigation.astro"
+---
+{/*
+TODO:
+* 1. Store to handle cart state
+ */}
+<header class="sticky z-10 top-0 flex h-16 items-center justify-between px-4 bg-background">
+  <div class="header-left flex justify-start">
+    <HeaderNavigation />
+  </div>
+  <div class="header-right flex justify-start">
+    <a
+      href="/cart"
+      class="t-mono uppercase text-primary font-medium hover:cursor-pointer hover:underline hover:text-primary sm:text-foreground text-2xl sm:text-base"
+    >
+      КОРЗИНА(0)
+    </a>
+  </div>
+</header>

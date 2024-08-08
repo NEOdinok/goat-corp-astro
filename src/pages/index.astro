@@ -1,10 +1,15 @@
 ---
-import Layout from '../layouts/Layout.astro';
 import '@/index.css';
+import HomeNavigation from '@/components/HomeNavigation.astro';
+import HomeFooter from '@/components/HomeFooter.astro';
+import EmptyLayout from '@/layouts/EmptyLayout.astro';
+
+const pageTitle = "home";
 ---
 
-<Layout title="𝔊𝔒𝔄𝔗.ℭ𝔒ℜ𝔓">
-	<main>
-    index page
-	</main>
-</Layout>
+<EmptyLayout title={pageTitle}>
+  <div class="welcome">
+    <HomeNavigation />
+    <HomeFooter />
+  </div>
+</EmptyLayout>
