@@ -1,13 +1,14 @@
 ---
-title: 'About GOAT.CORP'
+title: "About GOAT.CORP"
 pubDate: 2024-08-8
-description: 'This is the first post of my new Astro blog.'
-author: 'Програмист'
+description: "This is the first post of my new Astro blog."
+author: "Програмист"
 image:
-    url: 'https://docs.astro.build/assets/rose.webp'
-    alt: 'The Astro logo on a dark background with a pink glow.'
+  url: "https://docs.astro.build/assets/rose.webp"
+  alt: "The Astro logo on a dark background with a pink glow."
 tags: ["самокат", "goat corp", "гоат корп"]
 ---
+
 # My First Blog Post
 
 Published on: 2022-07-01

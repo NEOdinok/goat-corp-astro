@@ -16,7 +16,6 @@ npm create astro@latest -- --template basics
 
 ## Project Structure
 
-
 ```text
 /
 ├── public/
@@ -35,9 +34,9 @@ npm create astro@latest -- --template basics
 
 All commands are run from the root of the project, from a terminal:
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `pnpm ...`                | Do something                                     |
+| Command    | Action       |
+| :--------- | :----------- |
+| `pnpm ...` | Do something |
 
 ## Footer
 
