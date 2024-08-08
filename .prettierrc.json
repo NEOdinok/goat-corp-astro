@@ -1,0 +1,23 @@
+{
+  "printWidth": 100,
+  "tabWidth": 2,
+  "useTabs": false,
+  "semi": true,
+  "trailingComma": "all",
+  "bracketSpacing": true,
+  "plugins": ["prettier-plugin-astro"],
+  "importOrderGroupNamespaceSpecifiers": true,
+  "importOrderParserPlugins": ["typescript", "jsx", "astro"],
+  "importOrderSortSpecifiers": true,
+  "importOrderSeparation": true,
+  "importOrder": [
+    "<THIRD_PARTY_MODULES>",
+    "^@/app(.*)$",
+    "^@/pages(.*)$",
+    "^@/widgets(.*)$",
+    "^@/features(.*)$",
+    "^@/entities(.*)$",
+    "^@/shared(.*)$",
+    "^[./]"
+  ]
+}

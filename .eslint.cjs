@@ -16,6 +16,6 @@ module.exports = {
   parserOptions: { ecmaVersion: "latest", sourceType: "module" },
   plugins: ["jsx-a11y", "prettier", "astro"],
   rules: {
-    "@typescript-eslint/no-var-requires": "off", /
+    "@typescript-eslint/no-var-requires": "off",
   },
 };
